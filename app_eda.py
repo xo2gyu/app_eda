@@ -217,7 +217,7 @@ class EDA:
         # 1. 기초통계
         with tabs[0]:
             df_sejong = df[df['지역'] == '세종'].copy()
-            df_sejong = df_sejong.replace('-', 0)
+            # df_sejong = df_sejong.replace('-', 0)
 
             cols_to_numeric = ['인구', '출생아수(명)', '사망자수(명)']
             for col in cols_to_numeric:
